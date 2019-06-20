@@ -42,6 +42,6 @@ setup(name='MTProxy',
       },
       entry_points={
           'console_scripts': [
-              'my_project = mtproxy.__main__:main'
+              'mtproxy = mtproxy.__main__:main'
           ]
       })
