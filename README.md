@@ -97,7 +97,7 @@ mtproxy config.ini
 ```
 
 
-### Special Thanks to [alexbers](https://github.com/alexbers) for his grate [project](https://github.com/alexbers/mtprotoproxy) 
+### Special Thanks to [alexbers](https://github.com/alexbers) for his great [project](https://github.com/alexbers/mtprotoproxy) 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
