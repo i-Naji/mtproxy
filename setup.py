@@ -9,7 +9,7 @@ with open('README.md') as f:
 
 
 setup(name='MTProxy',
-      version='0.1.0',
+      version='0.1.3',
       description='Async Python MTProto Proxy ',
       long_description=long_description,
       long_description_content_type="text/markdown",

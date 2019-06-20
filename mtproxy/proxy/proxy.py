@@ -190,7 +190,7 @@ class MTProxy:
         if parser.has_section("mtproxy"):
             for order, options in settings.items():
                 for option in options:
-                    value = parser.get("mtproxy", option)
+                    value = parser.get("mtproxy", option, fallback=None)
                     if value is not None:
                         setattr(self.config, option, order(value))
 
@@ -204,6 +204,7 @@ class MTProxy:
         ip_addrs = [ip for ip in [self.config.ipv4, self.config.ipv6] if ip]
         if not ip_addrs:
             ip_addrs = ["YOUR_IP"]
+
         for user in self.config.users:
             name, secret = user.name, user.secret
             for ip in ip_addrs:

@@ -3,7 +3,7 @@ from .utils import setup_files_limit
 from .proxy import MTProxy
 
 
-def main(args: list=None):
+def main(args: list=sys.argv[1:]):
     """The main routine."""
     setup_files_limit()
 
